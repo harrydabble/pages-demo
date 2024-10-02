@@ -35,11 +35,11 @@ jobs:
 
     - name: Build docs
       run: |
-        poetry run sphinx-build -b html docs/ _build/html
+        poetry run sphinx-build -b html docs/ build/html
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_build/html
+        publish_dir: ./build/html
         publish_branch: gh-pages  # Ensure this is your target branch for GitHub Pages
