@@ -36,4 +36,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_build/html
-        publish_branch: gh-pages  # Ensure this is your target branch for GitHub Pages
+        publish_branch: main  # Ensure this is your target branch for GitHub Pages
